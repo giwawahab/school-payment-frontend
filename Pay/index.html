@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+   
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <!-- App CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="font-awesome/css/all.min.css">
+
+</head>
+
+<body>
+
+  <section class="colored-section section" id="title">
+
+    <!-- Nav Bar -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="images/logoriv.png" alt="logo" width="80">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item " id="home">
+                <a class="nav-link js-item active" id="home">Home</a>
+              </li>
+              <li class="nav-item " id="form">
+                <a class="nav-link js-item" id="form">Form</a>
+              </li>
+              <li class="nav-item " id="pay">
+                <a class="nav-link js-item" id="pay">Payment</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+
+
+      <!-- Title -->
+      <div class="row js-content active" id="home">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Online Payment for secondary and tertiary institutions.</h1>
+          <button type="button" id="form" class="btn btn-lg btn-success download-button js-item">Get Started</button>
+        </div>
+
+        <div class="col-lg-6">
+          <img class="title-image" src="images/capture.png" alt="Image">
+        </div>
+      </div>
+    </div>
+
+
+<!-- Second Section -->
+    <div class="row js-content second" id="form">
+
+
+      <div class="form-head">
+        <h2>Payment</h2>
+        <p>Mange Your Payment Method</p>
+      </div>
+      <div class="card">
+
+        <div class="">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label float-start" style="font-weight: bold;">Billing contact</label>
+              <input type="text" class="form-control" placeholder="Institution Name">
+            </div>
+        </div>
+
+        <div class="">
+            <div class="mb-3">
+              <select class="form-control">
+                <option> -Institution Type-</option>
+                <option>Primary</option>
+                <option>Secondary</option>
+                <option>Tertiary</option>
+              </select>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Student Email">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label float-start" style="font-weight: bold;">Billing Address</label>
+              <input type="text" class="form-control" placeholder="Card Name">
+            </div>
+        </div>
+        <div class="">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Card Number">
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+              <input type="text" class="form-control" placeholder="CVV">
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+                <input type="date" class="form-control" placeholder="Expire Date">
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+                <input type="email" class="form-control" placeholder="Phone Number">
+          </div>
+        </div>
+        
+        <hr>
+
+
+        <div class="">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label float-start" style="font-weight: bold;">Payment Method</label>
+              <select class="form-control">
+                <option> -Payment Type-</option>
+                <option>Bank Transfer</option>
+                <option>Card</option>
+                <option>POS</option>
+              </select>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+              <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="col-sm-12 col-md-6">
+                <input type="file" class="form-control" placeholder="Upload">
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div style="text-align: right;">
+            <button type="button" class="btn me-3 btn-outline-danger btn-md js-item " id="home">Cancel</button>
+            <button type="button" class="btn me-3 btn-success btn-md ">Pay Now</button>
+          </div>
+        </div>
+        <br>
+      </div>
+       <br>
+       <br>
+ 
+    </div>
+<!-- third -->
+    <div class="container js-content" id="pay">
+      <div class="row">
+        <div class="col-sm-12 col-md-6" style="text-align: left;">
+          <h5>Hello Tom</h5>
+          <p>Thank you for your payment! You paid for your 
+            <strong>School Fees and Government Development Fee.</strong></p>
+
+          <h6 class="text-success">Your Payment Summary</h6>
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">Payment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tution Fee</td>
+                <th>&#8358; 50,000</th>
+              </tr>
+              <tr>
+                <td>Development Fee</td>
+                <th>&#8358; 20,000</th>
+              </tr>
+              <tr>
+                <td><strong>Total</strong></td>
+                <th>&#8358; 70,000</th>
+              </tr>
+            </tbody>
+          </table>
+          <p>You will receive an email shortly at name@gmail.com with the payment 
+          receipt.</p>
+
+
+        </div>
+        <div class="col-sm-12 col-md-6 third-right" style="border-left: 3px solid green; text-align: center;">
+          <img class="title-image" src="images/checkout.png" alt="Image" style=" width: 20%; top: 200px; right: 250px;">
+          <button class="btn btn-danger btn-md" style="margin-top: 250px;border-radius: 50px">New Payment</button>
+          <div class="my-3">
+            <span class="btn rounded-pill btn-outline-secondary"><i class="fa fa-globe"></i></span>
+            <span class="btn rounded-pill btn-outline-secondary"><i class="fa-brands fa-instagram"></i></span>
+            <span class="btn rounded-pill btn-outline-secondary"><i class="fa-brands fa-facebook"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+ 
+
+  <script>
+    let tabs, sections;
+
+    let init = function(){
+
+      tabs = document.querySelectorAll(".js-item");
+
+      [].forEach.call(tabs, function(tab){
+          tab.addEventListener("click", switchTab);
+      });
+
+      sections = document.querySelectorAll(".js-content");
+    }
+
+    let switchTab = function(ev){
+    
+      let tab = ev.target;
+      console.log(tab);
+      let id = tab.id;
+      let actives = document.querySelectorAll(".active");
+      [].forEach.call(actives, function(active){
+          active.classList.remove("active");
+      });
+
+      [].forEach.call(sections, function(section){
+          if(id === section.id){
+            tab.classList.add("active");
+            section.classList.add("active");
+          }
+      });
+
+    }
+
+    window.addEventListener("DOMContentLoaded", init);
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
